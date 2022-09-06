@@ -56,7 +56,6 @@
 		A2E6E41A28C7A347001B948E /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
-				A2E6E42928C7A347001B948E /* Info.plist */,
 				A2E6E43028C7A3D5001B948E /* Common */,
 				A2E6E42F28C7A3CE001B948E /* Scenes */,
 			);
@@ -74,6 +73,7 @@
 		A2E6E43028C7A3D5001B948E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A2E6E42928C7A347001B948E /* Info.plist */,
 				A2E6E41B28C7A347001B948E /* AppDelegate.swift */,
 				A2E6E41D28C7A347001B948E /* SceneDelegate.swift */,
 				A2E6E42428C7A347001B948E /* Assets.xcassets */,
@@ -305,7 +305,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DTDWJQDFA8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NotBored/Info.plist;
+				INFOPLIST_FILE = NotBored/Common/Info.plist;
 				INFOPLIST_KEY_NSMainNibFile = HomeViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -333,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DTDWJQDFA8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NotBored/Info.plist;
+				INFOPLIST_FILE = NotBored/Common/Info.plist;
 				INFOPLIST_KEY_NSMainNibFile = HomeViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
