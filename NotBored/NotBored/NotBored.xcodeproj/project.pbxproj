@@ -14,6 +14,7 @@
 		A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43228C7A49F001B948E /* HomeViewController.swift */; };
 		A2E6E43528C7A49F001B948E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E43328C7A49F001B948E /* HomeViewController.xib */; };
 		A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43928C7C1CE001B948E /* UIColorExtension.swift */; };
+		A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43D28C7D849001B948E /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A2E6E43228C7A49F001B948E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2E6E43328C7A49F001B948E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A2E6E43928C7C1CE001B948E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A2E6E43D28C7D849001B948E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,8 @@
 		A2E6E41A28C7A347001B948E /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
-				A2E6E43828C7C1BC001B948E /* Extensions */,
 				A2E6E43028C7A3D5001B948E /* Common */,
+				A2E6E43828C7C1BC001B948E /* Extensions */,
 				A2E6E42F28C7A3CE001B948E /* Scenes */,
 			);
 			path = NotBored;
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A2E6E43928C7C1CE001B948E /* UIColorExtension.swift */,
+				A2E6E43D28C7D849001B948E /* BaseViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */,
 				A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */,
 				A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */,
 				A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */,
