@@ -11,7 +11,6 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = false
         view.backgroundColor = .backgroundColor
         navigationController?.navigationBar.tintColor = .black
         let navBarAppearance = UINavigationBarAppearance()
