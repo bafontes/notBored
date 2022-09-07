@@ -10,6 +10,7 @@
 		23AD129E28C7CA9F002EDE9D /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD129C28C7CA9F002EDE9D /* SuggestionsViewController.swift */; };
 		23AD129F28C7CA9F002EDE9D /* SuggestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AD129D28C7CA9F002EDE9D /* SuggestionsViewController.xib */; };
 		23AD12A128C7DA70002EDE9D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD12A028C7DA70002EDE9D /* Activity.swift */; };
+		2C024E2B28C92768003C2252 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C024E2A28C92768003C2252 /* TermsAndConditionsViewController.swift */; };
 		A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41B28C7A347001B948E /* AppDelegate.swift */; };
 		A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41D28C7A347001B948E /* SceneDelegate.swift */; };
 		A2E6E42528C7A347001B948E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E42428C7A347001B948E /* Assets.xcassets */; };
@@ -17,14 +18,15 @@
 		A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43228C7A49F001B948E /* HomeViewController.swift */; };
 		A2E6E43528C7A49F001B948E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E43328C7A49F001B948E /* HomeViewController.xib */; };
 		A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43928C7C1CE001B948E /* UIColorExtension.swift */; };
-		F572404874AB22B1747855F8 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */; };
 		A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43D28C7D849001B948E /* BaseViewController.swift */; };
+		F572404874AB22B1747855F8 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23AD129C28C7CA9F002EDE9D /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		23AD129D28C7CA9F002EDE9D /* SuggestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionsViewController.xib; sourceTree = "<group>"; };
 		23AD12A028C7DA70002EDE9D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		2C024E2A28C92768003C2252 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotBored.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6E41828C7A347001B948E /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6E41B28C7A347001B948E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 				23AD12A028C7DA70002EDE9D /* Activity.swift */,
 			);
 			path = Suggestions;
+			sourceTree = "<group>";
+		};
+		2C024E2928C92750003C2252 /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				2C024E2A28C92768003C2252 /* TermsAndConditionsViewController.swift */,
+			);
+			path = TermsAndConditions;
 			sourceTree = "<group>";
 		};
 		99A9B2036397094BE132151D /* Frameworks */ = {
@@ -101,6 +111,7 @@
 		A2E6E42F28C7A3CE001B948E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2C024E2928C92750003C2252 /* TermsAndConditions */,
 				23AD129B28C7CA3B002EDE9D /* Suggestions */,
 				A2E6E43128C7A446001B948E /* Home */,
 			);
@@ -143,7 +154,6 @@
 				A4CF22C0387FB7912EF7CB17 /* Pods-NotBored.debug.xcconfig */,
 				AE38EAB1DECD1A671730CAE8 /* Pods-NotBored.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -263,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C024E2B28C92768003C2252 /* TermsAndConditionsViewController.swift in Sources */,
 				A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */,
 				23AD12A128C7DA70002EDE9D /* Activity.swift in Sources */,
 				A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */,
