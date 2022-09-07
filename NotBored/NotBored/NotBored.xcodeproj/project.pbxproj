@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */; };
+		A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */; };
+		A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */; };
 		A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41B28C7A347001B948E /* AppDelegate.swift */; };
 		A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41D28C7A347001B948E /* SceneDelegate.swift */; };
 		A2E6E42528C7A347001B948E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E42428C7A347001B948E /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 		A2E6E41828C7A347001B948E /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6E41B28C7A347001B948E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E6E41D28C7A347001B948E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A068F00828C8C7F80021F3ED /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */,
+				A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		A068F00B28C8D1640021F3ED /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		A2E6E40F28C7A347001B948E = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +93,8 @@
 		A2E6E42F28C7A3CE001B948E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A068F00B28C8D1640021F3ED /* TabBar */,
+				A068F00828C8C7F80021F3ED /* Activities */,
 				A2E6E43128C7A446001B948E /* Home */,
 			);
 			path = Scenes;
@@ -177,8 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */,
+				A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */,
+				A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */,
 				A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */,
 				A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */,
+				A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */,
 				A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */,
 				A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */,
 			);
@@ -248,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -302,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -364,7 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
