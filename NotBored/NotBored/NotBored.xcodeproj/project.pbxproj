@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4ED8FA28C822E20023744D /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ED8F928C822E20023744D /* TermsAndConditionsViewController.swift */; };
 		A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41B28C7A347001B948E /* AppDelegate.swift */; };
 		A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41D28C7A347001B948E /* SceneDelegate.swift */; };
 		A2E6E42528C7A347001B948E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E42428C7A347001B948E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4ED8F928C822E20023744D /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		A2E6E41828C7A347001B948E /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6E41B28C7A347001B948E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E6E41D28C7A347001B948E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C4ED8F828C822D20023744D /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				2C4ED8F928C822E20023744D /* TermsAndConditionsViewController.swift */,
+			);
+			path = TermsAndConditions;
+			sourceTree = "<group>";
+		};
 		A2E6E40F28C7A347001B948E = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		A2E6E42F28C7A3CE001B948E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2C4ED8F828C822D20023744D /* TermsAndConditions */,
 				A2E6E43128C7A446001B948E /* Home */,
 			);
 			path = Scenes;
@@ -178,6 +189,7 @@
 			files = (
 				A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */,
 				A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */,
+				2C4ED8FA28C822E20023744D /* TermsAndConditionsViewController.swift in Sources */,
 				A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */,
 				A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */,
 				A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */,
