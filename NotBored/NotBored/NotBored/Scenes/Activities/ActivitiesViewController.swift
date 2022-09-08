@@ -76,7 +76,9 @@ extension ActivitiesViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ActivitiesViewController: ActivitiesDelegateProtocol {
     func activityLoaded(activity: Activities) {
-        print(activity)
+        let vc: SuggestionsViewController = SuggestionsViewController()
+        vc.activity = activity
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func errorHandler(error: String) {
