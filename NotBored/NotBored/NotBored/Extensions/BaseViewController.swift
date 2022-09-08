@@ -16,7 +16,7 @@ class BaseViewController: UIViewController {
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.backgroundColor = .mainColor
-        navBarAppearance.titleTextAttributes = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 30, weight: .bold)]
+        navBarAppearance.titleTextAttributes = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 35, weight: .bold)]
         navigationController?.navigationBar.standardAppearance = navBarAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         navigationController?.navigationBar.topItem?.backButtonTitle = ""

@@ -11,6 +11,12 @@
 		23AD129F28C7CA9F002EDE9D /* SuggestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AD129D28C7CA9F002EDE9D /* SuggestionsViewController.xib */; };
 		23AD12A128C7DA70002EDE9D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD12A028C7DA70002EDE9D /* Activity.swift */; };
 		2C024E2B28C92768003C2252 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C024E2A28C92768003C2252 /* TermsAndConditionsViewController.swift */; };
+		A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */; };
+		A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */; };
+		A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */; };
+		A068F01228C98E780021F3ED /* ActivitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F01128C98E780021F3ED /* ActivitiesService.swift */; };
+		A068F01528C98F3B0021F3ED /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F01428C98F3B0021F3ED /* Activities.swift */; };
+		A068F01728C9995F0021F3ED /* ActivitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F01628C9995F0021F3ED /* ActivitiesViewModel.swift */; };
 		A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41B28C7A347001B948E /* AppDelegate.swift */; };
 		A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41D28C7A347001B948E /* SceneDelegate.swift */; };
 		A2E6E42528C7A347001B948E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E42428C7A347001B948E /* Assets.xcassets */; };
@@ -20,6 +26,7 @@
 		A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43928C7C1CE001B948E /* UIColorExtension.swift */; };
 		A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43D28C7D849001B948E /* BaseViewController.swift */; };
 		F572404874AB22B1747855F8 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */; };
+		A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43D28C7D849001B948E /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,12 @@
 		23AD12A028C7DA70002EDE9D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		2C024E2A28C92768003C2252 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotBored.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		A068F01128C98E780021F3ED /* ActivitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesService.swift; sourceTree = "<group>"; };
+		A068F01428C98F3B0021F3ED /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		A068F01628C9995F0021F3ED /* ActivitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewModel.swift; sourceTree = "<group>"; };
 		A2E6E41828C7A347001B948E /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6E41B28C7A347001B948E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E6E41D28C7A347001B948E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +93,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A068F00828C8C7F80021F3ED /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */,
+				A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */,
+				A068F01628C9995F0021F3ED /* ActivitiesViewModel.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		A068F00B28C8D1640021F3ED /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A068F01028C98E550021F3ED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A068F01128C98E780021F3ED /* ActivitiesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A068F01328C98F1F0021F3ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A068F01428C98F3B0021F3ED /* Activities.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A2E6E40F28C7A347001B948E = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +148,8 @@
 		A2E6E41A28C7A347001B948E /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				A068F01328C98F1F0021F3ED /* Models */,
+				A068F01028C98E550021F3ED /* Service */,
 				A2E6E43028C7A3D5001B948E /* Common */,
 				A2E6E43828C7C1BC001B948E /* Extensions */,
 				A2E6E42F28C7A3CE001B948E /* Scenes */,
@@ -113,6 +162,8 @@
 			children = (
 				2C024E2928C92750003C2252 /* TermsAndConditions */,
 				23AD129B28C7CA3B002EDE9D /* Suggestions */,
+				A068F00B28C8D1640021F3ED /* TabBar */,
+				A068F00828C8C7F80021F3ED /* Activities */,
 				A2E6E43128C7A446001B948E /* Home */,
 			);
 			path = Scenes;
@@ -276,8 +327,14 @@
 				2C024E2B28C92768003C2252 /* TermsAndConditionsViewController.swift in Sources */,
 				A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */,
 				23AD12A128C7DA70002EDE9D /* Activity.swift in Sources */,
+				A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */,
+				A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */,
 				A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */,
+				A068F01728C9995F0021F3ED /* ActivitiesViewModel.swift in Sources */,
+				A068F01228C98E780021F3ED /* ActivitiesService.swift in Sources */,
 				A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */,
+				A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */,
+				A068F01528C98F3B0021F3ED /* Activities.swift in Sources */,
 				A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */,
 				23AD129E28C7CA9F002EDE9D /* SuggestionsViewController.swift in Sources */,
 				A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */,
@@ -348,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,7 +494,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,7 +523,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
