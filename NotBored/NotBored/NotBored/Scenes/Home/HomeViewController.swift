@@ -7,13 +7,13 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
             titleLabel.text = "Not Bored"
             titleLabel.textColor = .mainColor
-            titleLabel.font = .systemFont(ofSize: 35, weight: .bold)
+            titleLabel.font = UIFont(name: "Courier New", size: 35)
         }
     }
     @IBOutlet weak var subtitleLabel: UILabel! {
@@ -46,14 +46,8 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = true
+        view.backgroundColor = .backgroundColor
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.isNavigationBarHidden = false
-    }
-    
 //    MARK: - actions
     
     @IBAction func nextButtonAction(_ sender: Any) {
@@ -70,6 +64,8 @@ class HomeViewController: BaseViewController {
 //        TODO: make redirection with cantParticipant
     }
     @IBAction func termsAndConditionsButtonAction(_ sender: Any) {
-//        TODO: make redirection to terms and conditions scene
+        let vc: TermsAndConditionsViewController = TermsAndConditionsViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(vc, animated: true)
     }
 }
