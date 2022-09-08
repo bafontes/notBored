@@ -14,7 +14,6 @@ protocol SuggestionsViewControllerDelegate {
 
 class SuggestionsViewController: BaseViewController {
     
-//    var avticidadMock = Activities(activity: "Correr", accessibility: 0.2, type: "Deporte", participants: 1, price: 0.0, link: "", key: "")
     var activity: Activities?
     var isRandom: Bool = false
     var delegate: SuggestionsViewControllerDelegate?
