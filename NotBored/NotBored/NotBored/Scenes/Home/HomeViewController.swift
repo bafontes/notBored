@@ -30,7 +30,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton! {
         didSet {
             nextButton.setTitle("Start", for: .normal)
-            nextButton.backgroundColor = .mainColor
+            nextButton.isEnabled = false
+            nextButton.backgroundColor = .gray
             nextButton.tintColor = .white
             nextButton.layer.cornerRadius = 5
         }
@@ -60,6 +61,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
         view.backgroundColor = .backgroundColor
     }
     
@@ -101,6 +104,8 @@ class HomeViewController: UIViewController {
         textfield.textColor = .black
     }
 }
+//    MARK: - Extensions
+
 extension HomeViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int { 1 }
     
@@ -114,5 +119,11 @@ extension HomeViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.rangeSelected = pickerData[row]
+    }
+}
+
+extension HomeViewController {
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

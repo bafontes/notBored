@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		23AD129E28C7CA9F002EDE9D /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD129C28C7CA9F002EDE9D /* SuggestionsViewController.swift */; };
 		23AD129F28C7CA9F002EDE9D /* SuggestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AD129D28C7CA9F002EDE9D /* SuggestionsViewController.xib */; };
-		23AD12A128C7DA70002EDE9D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD12A028C7DA70002EDE9D /* Activity.swift */; };
 		2C024E2B28C92768003C2252 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C024E2A28C92768003C2252 /* TermsAndConditionsViewController.swift */; };
 		A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */; };
 		A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */; };
@@ -26,13 +25,11 @@
 		A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43928C7C1CE001B948E /* UIColorExtension.swift */; };
 		A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43D28C7D849001B948E /* BaseViewController.swift */; };
 		F572404874AB22B1747855F8 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */; };
-		A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43D28C7D849001B948E /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23AD129C28C7CA9F002EDE9D /* SuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		23AD129D28C7CA9F002EDE9D /* SuggestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionsViewController.xib; sourceTree = "<group>"; };
-		23AD12A028C7DA70002EDE9D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		2C024E2A28C92768003C2252 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotBored.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +69,6 @@
 			children = (
 				23AD129C28C7CA9F002EDE9D /* SuggestionsViewController.swift */,
 				23AD129D28C7CA9F002EDE9D /* SuggestionsViewController.xib */,
-				23AD12A028C7DA70002EDE9D /* Activity.swift */,
 			);
 			path = Suggestions;
 			sourceTree = "<group>";
@@ -326,7 +322,6 @@
 			files = (
 				2C024E2B28C92768003C2252 /* TermsAndConditionsViewController.swift in Sources */,
 				A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */,
-				23AD12A128C7DA70002EDE9D /* Activity.swift in Sources */,
 				A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */,
 				A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */,
 				A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */,
