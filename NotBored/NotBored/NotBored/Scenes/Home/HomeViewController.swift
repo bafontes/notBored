@@ -75,7 +75,7 @@ class HomeViewController: UIViewController {
 //    MARK: - actions
     
     @IBAction func nextButtonAction(_ sender: Any) {
-        let vc: ActivitiesViewController = ActivitiesViewController()
+        let vc: TabBarViewController = TabBarViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func termsAndConditionsButtonAction(_ sender: Any) {

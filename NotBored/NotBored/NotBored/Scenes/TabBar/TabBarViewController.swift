@@ -29,7 +29,7 @@ class TabBarViewController: UITabBarController {
                                       image: icon1,
                                       selectedImage: icon1Selected)
         
-        let vc2 = HomeViewController()
+        let vc2 = SuggestionsViewController()
         let icon2 = UIImage(systemName: "shuffle.circle")
         let icon2Selected = UIImage(systemName: "shuffle.circle.fill")
         vc2.tabBarItem = UITabBarItem(title: "Random",
