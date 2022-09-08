@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol ActivitiesDataDelegate {
+    func getActivityData(participants: Int, priceRange: PriceRanges)
+}
+
 class ActivitiesViewController: BaseViewController {
     let activitiesViewModel = ActivitiesViewModel()
+    var delegate: ActivitiesDataDelegate?
     
     lazy var table: UITableView = {
         let table = UITableView()
@@ -47,6 +52,8 @@ class ActivitiesViewController: BaseViewController {
             table.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
+    
+    
     
     private func getActivity(category: String) {
         activitiesViewModel.getActivity(participants: 80, priceRange: .free, category: category)
