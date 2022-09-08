@@ -13,6 +13,7 @@ class TermsAndConditionsViewController: UIViewController {
         let termsLabel = UILabel()
         termsLabel.translatesAutoresizingMaskIntoConstraints = false
         termsLabel.text = "Terms and Conditions"
+        termsLabel.textAlignment = .center
         termsLabel.textColor = .black
         termsLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         
@@ -95,7 +96,7 @@ class TermsAndConditionsViewController: UIViewController {
         NSLayoutConstraint.activate([
             //CloseImage Constraints
             closeImage.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 10),
-            closeImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            closeImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             closeImage.widthAnchor.constraint(equalToConstant: 16),
             closeImage.heightAnchor.constraint(equalToConstant: 20),
             
@@ -107,10 +108,10 @@ class TermsAndConditionsViewController: UIViewController {
             //TitleLabel Constraints
             titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            titleLabel.topAnchor.constraint(equalTo: termsLabel.topAnchor, constant: 40),
+            titleLabel.topAnchor.constraint(equalTo: termsLabel.topAnchor, constant: 60),
             
             //TextLabel Constraints
-            textLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 22),
+            textLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 45),
             textLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             textLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
