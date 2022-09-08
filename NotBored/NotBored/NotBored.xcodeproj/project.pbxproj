@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */; };
-		A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */; };
-		A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */; };
 		23AD129E28C7CA9F002EDE9D /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD129C28C7CA9F002EDE9D /* SuggestionsViewController.swift */; };
 		23AD129F28C7CA9F002EDE9D /* SuggestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AD129D28C7CA9F002EDE9D /* SuggestionsViewController.xib */; };
 		23AD12A128C7DA70002EDE9D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD12A028C7DA70002EDE9D /* Activity.swift */; };
+		A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */; };
+		A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */; };
+		A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */; };
+		A068F01228C98E780021F3ED /* ActivitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F01128C98E780021F3ED /* ActivitiesService.swift */; };
+		A068F01528C98F3B0021F3ED /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F01428C98F3B0021F3ED /* Activities.swift */; };
+		A068F01728C9995F0021F3ED /* ActivitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068F01628C9995F0021F3ED /* ActivitiesViewModel.swift */; };
 		A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41B28C7A347001B948E /* AppDelegate.swift */; };
 		A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E41D28C7A347001B948E /* SceneDelegate.swift */; };
 		A2E6E42528C7A347001B948E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E42428C7A347001B948E /* Assets.xcassets */; };
@@ -20,8 +23,8 @@
 		A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43228C7A49F001B948E /* HomeViewController.swift */; };
 		A2E6E43528C7A49F001B948E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E43328C7A49F001B948E /* HomeViewController.xib */; };
 		A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43928C7C1CE001B948E /* UIColorExtension.swift */; };
-		F572404874AB22B1747855F8 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */; };
 		A2E6E43E28C7D849001B948E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E43D28C7D849001B948E /* BaseViewController.swift */; };
+		F572404874AB22B1747855F8 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD89521B0C8284AF0178B56 /* Pods_NotBored.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		A068F01128C98E780021F3ED /* ActivitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesService.swift; sourceTree = "<group>"; };
+		A068F01428C98F3B0021F3ED /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		A068F01628C9995F0021F3ED /* ActivitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewModel.swift; sourceTree = "<group>"; };
 		A2E6E41828C7A347001B948E /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6E41B28C7A347001B948E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E6E41D28C7A347001B948E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 			children = (
 				A068F00928C8C8330021F3ED /* ActivitiesViewController.swift */,
 				A068F00E28C8DF5C0021F3ED /* CustomViewCell.swift */,
+				A068F01628C9995F0021F3ED /* ActivitiesViewModel.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -91,6 +98,22 @@
 				A068F00C28C8D18D0021F3ED /* TabBarViewController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A068F01028C98E550021F3ED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A068F01128C98E780021F3ED /* ActivitiesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A068F01328C98F1F0021F3ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A068F01428C98F3B0021F3ED /* Activities.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A2E6E40F28C7A347001B948E = {
@@ -114,6 +137,8 @@
 		A2E6E41A28C7A347001B948E /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				A068F01328C98F1F0021F3ED /* Models */,
+				A068F01028C98E550021F3ED /* Service */,
 				A2E6E43028C7A3D5001B948E /* Common */,
 				A2E6E43828C7C1BC001B948E /* Extensions */,
 				A2E6E42F28C7A3CE001B948E /* Scenes */,
@@ -168,7 +193,6 @@
 				A4CF22C0387FB7912EF7CB17 /* Pods-NotBored.debug.xcconfig */,
 				AE38EAB1DECD1A671730CAE8 /* Pods-NotBored.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -293,8 +317,11 @@
 				A068F00F28C8DF5C0021F3ED /* CustomViewCell.swift in Sources */,
 				A068F00A28C8C8330021F3ED /* ActivitiesViewController.swift in Sources */,
 				A2E6E41C28C7A347001B948E /* AppDelegate.swift in Sources */,
+				A068F01728C9995F0021F3ED /* ActivitiesViewModel.swift in Sources */,
+				A068F01228C98E780021F3ED /* ActivitiesService.swift in Sources */,
 				A2E6E41E28C7A347001B948E /* SceneDelegate.swift in Sources */,
 				A068F00D28C8D18D0021F3ED /* TabBarViewController.swift in Sources */,
+				A068F01528C98F3B0021F3ED /* Activities.swift in Sources */,
 				A2E6E43428C7A49F001B948E /* HomeViewController.swift in Sources */,
 				23AD129E28C7CA9F002EDE9D /* SuggestionsViewController.swift in Sources */,
 				A2E6E43A28C7C1CE001B948E /* UIColorExtension.swift in Sources */,

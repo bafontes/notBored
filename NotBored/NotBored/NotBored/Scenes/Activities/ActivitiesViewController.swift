@@ -8,14 +8,11 @@
 import UIKit
 
 class ActivitiesViewController: BaseViewController {
-    
-    var itemsActivities: [String] = ["Education", "Recreation", "Social", "Diy", "Charity", "Cooking", "Relaxation", "Music", "Busywork", "Another", "Another 2"]
+    let activitiesViewModel = ActivitiesViewModel()
     
     lazy var table: UITableView = {
         let table = UITableView()
         table.backgroundColor = nil
-//        table.separatorColor = .black
-//        table.separatorInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
         table.separatorStyle = .none
         table.dataSource = self
         table.delegate = self
@@ -27,26 +24,22 @@ class ActivitiesViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        activitiesViewModel.delegate = self
         setupNavBar()
         setupViews()
         setupConstraints()
-//        setup()
         table.reloadData()
     }
     
-    func setupNavBar() {
+    private func setupNavBar() {
         tabBarController?.navigationItem.title = "Activities"
     }
     
-//    func setup() {
-//        table.register(UITableViewCell.self, forCellReuseIdentifier: "myCell")
-//    }
-    
-    func setupViews() {
+    private func setupViews() {
         view.addSubview(table)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         NSLayoutConstraint.activate([
             table.topAnchor.constraint(equalTo: view.topAnchor),
             table.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -54,12 +47,16 @@ class ActivitiesViewController: BaseViewController {
             table.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
+    
+    private func getActivity(category: String) {
+        activitiesViewModel.getActivity(participants: 80, priceRange: .free, category: category)
+    }
 }
 
 extension ActivitiesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemsActivities.count
+        return activitiesViewModel.itemsActivities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,13 +64,22 @@ extension ActivitiesViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         
-        let activity = itemsActivities[indexPath.row]
-        cell.setData(activity)
+        let activity = activitiesViewModel.itemsActivities[indexPath.row]
+        cell.setData(activity.capitalized)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        getActivity(category: activitiesViewModel.itemsActivities[indexPath.row])
     }
+}
 
+extension ActivitiesViewController: ActivitiesDelegateProtocol {
+    func activityLoaded(activity: Activities) {
+        print(activity)
+    }
+    
+    func errorHandler(error: String) {
+        print(error)
+    }
 }
