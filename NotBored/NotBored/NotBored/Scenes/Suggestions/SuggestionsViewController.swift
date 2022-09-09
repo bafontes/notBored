@@ -20,7 +20,7 @@ class SuggestionsViewController: BaseViewController {
         
         didSet{
             
-            ActivityUILabel.font = .systemFont(ofSize: 50, weight: .black)
+            ActivityUILabel.font = .systemFont(ofSize: 30, weight: .black)
             ActivityUILabel.isHighlighted = true
             ActivityUILabel.numberOfLines = 0
             guard let activity = activity else {
@@ -30,6 +30,10 @@ class SuggestionsViewController: BaseViewController {
             ActivityUILabel.text = activity.activity
         }
     }
+    
+    @IBOutlet weak var PriceLabel: UILabel!
+    
+    
     
     @IBOutlet weak var ActivityInfoUILabel: UILabel!
     
@@ -62,6 +66,10 @@ class SuggestionsViewController: BaseViewController {
     @IBAction func NewActivity(_ sender: Any) {
             
     }
+    
+    @IBOutlet weak var ParticipantsIcon: UIImageView!
+    
+    @IBOutlet weak var PriceImage: UIImageView!
     
     @IBOutlet weak var CategoryImage: UIImageView!
     
@@ -103,7 +111,7 @@ class SuggestionsViewController: BaseViewController {
         AmountParticipantsUILabel.text = String(participants)
         PriceUIlabel.text = priceRange(price)
         ActivityUILabel.text = activity?.activity
-        ActivityCategoryUILabel.text = activity?.type
+        ActivityCategoryUILabel.text = activity?.type.capitalized
     }
     
     func priceRange(_ price: Double) -> String{
@@ -118,6 +126,20 @@ class SuggestionsViewController: BaseViewController {
         default:
             return("Free")
         }
+    }
+    
+    func errorView() {
+        tabBarController?.navigationItem.title = "Random"
+        ActivityUILabel.text = "No activity found"
+        ActivityInfoUILabel.isHidden = true
+        AnotherActivityButton.isHidden = true
+        AmountParticipantsUILabel.isHidden = true
+        PriceUIlabel.isHidden = true
+        ActivityCategoryUILabel.isHidden = true
+        CategoryImage.isHidden = true
+        PriceLabel.isHidden = true
+        ParticipantsIcon.isHidden = true
+        PriceImage.isHidden = true
     }
     
     @IBAction func anotherButtonAction(_ sender: Any) {
@@ -137,6 +159,7 @@ extension SuggestionsViewController: ActivitiesDelegateProtocol {
     }
     
     func errorHandler(error: String) {
+        errorView()
         print("error")
     }
 }

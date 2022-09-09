@@ -13,12 +13,20 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setControllers()
         setupTabBar()
+        setControllers()
     }
     
     private func setupTabBar() {
         tabBar.barTintColor = .backgroundColor
+//
+//        let navBarAppearance = UINavigationBarAppearance()
+//        navBarAppearance.configureWithOpaqueBackground()
+//        navBarAppearance.backgroundColor = .mainColor
+//        navBarAppearance.titleTextAttributes = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 35, weight: .bold)]
+//        tabBarController?.navigationController.navigationBar.standardAppearance = navBarAppearance
+//        tabBarController?.navigationController.navigationBar.scrollEdgeAppearance = navBarAppearance
+//        tabBarController?.navigationController.navigationBar.topItem?.backButtonTitle = ""
     }
     
     func setControllers() {
