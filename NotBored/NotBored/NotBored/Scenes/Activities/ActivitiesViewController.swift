@@ -33,6 +33,11 @@ class ActivitiesViewController: BaseViewController {
         table.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavBar()
+    }
+    
     private func setupNavBar() {
         tabBarController?.navigationItem.title = "Activities"
     }
@@ -63,12 +68,18 @@ extension ActivitiesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(CustomViewCell.self)", for: indexPath) as? CustomViewCell else {
             return UITableViewCell()
         }
         
         let activity = activitiesViewModel.itemsActivities[indexPath.row]
         cell.setData(activity.capitalized)
+                
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(red: 0.039, green: 0.569, blue: 0.914, alpha: 0.200)
+        cell.selectedBackgroundView = backgroundView
+        
         return cell
     }
     
