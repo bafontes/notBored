@@ -78,11 +78,12 @@ class HomeViewController: UIViewController {
 //    MARK: - actions
     
     @IBAction func nextButtonAction(_ sender: Any) {
-        let vc: TabBarViewController = TabBarViewController()
+        let vc = TabBarViewController()
+        vc.updateControllers(participants: cantParticipants, priceRange: rangeSelected)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func termsAndConditionsButtonAction(_ sender: Any) {
-        let vc: TermsAndConditionsViewController = TermsAndConditionsViewController()
+        let vc = TermsAndConditionsViewController()
         vc.modalPresentationStyle = .fullScreen
         self.navigationController?.present(vc, animated: true)
     }

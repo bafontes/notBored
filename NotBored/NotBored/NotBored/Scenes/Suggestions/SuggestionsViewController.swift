@@ -7,16 +7,14 @@
 
 import UIKit
 
-protocol SuggestionsViewControllerDelegate {
-    func sendData(activity: Activities, isRandom: Bool)
-    
-}
-
 class SuggestionsViewController: BaseViewController {
     
+    let activitiesViewModel = ActivitiesViewModel()
+    var participants: Int?
+    var priceRange: PriceRanges?
+    var currentCategory: String?
     var activity: Activities?
     var isRandom: Bool = false
-    var delegate: SuggestionsViewControllerDelegate?
     
     @IBOutlet weak var ActivityUILabel: UILabel!{
         
@@ -69,12 +67,34 @@ class SuggestionsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activitiesViewModel.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if isRandom {
+            getActivity(participants: participants ?? 1, priceRange: priceRange ?? .free, category: nil)
+        }
+    }
+    
+    public func getActivity(participants: Int, priceRange: PriceRanges, category: String?){
+        self.participants = participants
+        self.priceRange = priceRange
+        if let _ = category {
+            isRandom = false
+        } else {
+            isRandom = true
+        }
+        activitiesViewModel.getActivity(participants: participants , priceRange: priceRange , category: category)
+    }
+    
+    private func updateView(){
         if (isRandom){
-            title = "Random"
+            tabBarController?.navigationItem.title = "Random"
             CategoryImage.isHidden = true
             ActivityCategoryUILabel.isHidden = true
         }else{
-            title = activity?.type
+            title = activity?.type.capitalized
         }
         guard let participants = activity?.participants,
               let price = activity?.price else {
@@ -82,6 +102,8 @@ class SuggestionsViewController: BaseViewController {
         }
         AmountParticipantsUILabel.text = String(participants)
         PriceUIlabel.text = priceRange(price)
+        ActivityUILabel.text = activity?.activity
+        ActivityCategoryUILabel.text = activity?.type
     }
     
     func priceRange(_ price: Double) -> String{
@@ -96,7 +118,25 @@ class SuggestionsViewController: BaseViewController {
         default:
             return("Free")
         }
-        
     }
+    
+    @IBAction func anotherButtonAction(_ sender: Any) {
+        if isRandom {
+            getActivity(participants: participants ?? 1, priceRange: priceRange ?? .free, category: nil)
+        } else {
+            getActivity(participants: participants ?? 1, priceRange: priceRange ?? .free, category: activity?.type)
+        }
+    }
+    
+}
 
+extension SuggestionsViewController: ActivitiesDelegateProtocol {
+    func activityLoaded(activity: Activities) {
+        self.activity = activity
+        updateView()
+    }
+    
+    func errorHandler(error: String) {
+        print("error")
+    }
 }

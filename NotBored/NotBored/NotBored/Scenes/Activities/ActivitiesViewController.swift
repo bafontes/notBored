@@ -7,13 +7,11 @@
 
 import UIKit
 
-protocol ActivitiesDataDelegate {
-    func getActivityData(participants: Int, priceRange: PriceRanges)
-}
-
 class ActivitiesViewController: BaseViewController {
     let activitiesViewModel = ActivitiesViewModel()
-    var delegate: ActivitiesDataDelegate?
+    
+    var participants: Int?
+    var priceRange: PriceRanges?
     
     lazy var table: UITableView = {
         let table = UITableView()
@@ -29,7 +27,6 @@ class ActivitiesViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .clear
-        activitiesViewModel.delegate = self
         setupNavBar()
         setupViews()
         setupConstraints()
@@ -53,10 +50,9 @@ class ActivitiesViewController: BaseViewController {
         ])
     }
     
-    
-    
-    private func getActivity(category: String) {
-        activitiesViewModel.getActivity(participants: 80, priceRange: .free, category: category)
+    public func updateView(participants: Int, priceRange: PriceRanges){
+        self.participants = participants
+        self.priceRange = priceRange
     }
 }
 
@@ -77,18 +73,8 @@ extension ActivitiesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        getActivity(category: activitiesViewModel.itemsActivities[indexPath.row])
-    }
-}
-
-extension ActivitiesViewController: ActivitiesDelegateProtocol {
-    func activityLoaded(activity: Activities) {
-        let vc: SuggestionsViewController = SuggestionsViewController()
-        vc.activity = activity
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func errorHandler(error: String) {
-        print(error)
+        let vc = SuggestionsViewController()
+        vc.getActivity(participants: participants ?? 1, priceRange: priceRange ?? .free, category: activitiesViewModel.itemsActivities[indexPath.row])
+        tabBarController?.navigationController?.pushViewController(vc, animated: true)
     }
 }
