@@ -17,8 +17,8 @@ class ActivitiesViewController: BaseViewController {
     
     lazy var table: UITableView = {
         let table = UITableView()
-        table.backgroundColor = nil
         table.separatorStyle = .none
+        table.backgroundColor = .backgroundColor
         table.dataSource = self
         table.delegate = self
         table.register(CustomViewCell.self, forCellReuseIdentifier: "\(CustomViewCell.self)")
@@ -28,7 +28,7 @@ class ActivitiesViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         activitiesViewModel.delegate = self
         setupNavBar()
         setupViews()
